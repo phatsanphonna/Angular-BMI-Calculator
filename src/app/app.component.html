@@ -1,16 +1,19 @@
 <div class="main-container">
+
+  <h1 class="center">BMI Calculator</h1>
+
   <div class="center weight">
-    <label>น้ำหนัก</label>
-    <input #weight type="text" placeholder="น้ำหนัก" />
+    <label class="form-label">น้ำหนัก</label>
+    <input #weight type="text" placeholder="น้ำหนัก (กิโลกรัม)" class="form-control">
   </div>
 
   <div class="center height">
-    <label>ส่วนสูง</label>
-    <input #height type="text" placeholder="ส่วนสูง" />
+    <label class="form-label">ส่วนสูง</label>
+    <input #height type="text" placeholder="ส่วนสูง (เซนติเมตร)" class="form-control">
   </div>
 
   <div class="center send-value">
-    <button (click)="calculateBMI(weight.value, height.value)" mat-button color="primary">
+    <button (click)="calculateBMI(weight.value, height.value)" type="button" class="btn btn-primary">
       คำนวณ</button>
   </div>
 
